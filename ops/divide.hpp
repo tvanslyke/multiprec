@@ -9,6 +9,12 @@
 
 namespace tim::multiprec::ops {
 
+
+template <class Digit>
+constexpr std::optional<std::array<Digit, 2>> divide_by_digit(Span<const Digit> numer, Digit denom, Span<Digit> out) {
+	
+}
+
 template <class Digit>
 constexpr std::optional<std::array<Digit, 2>> divide(std::array<Digit, 2> numer, Digit denom) {
 	if(denom == 0ul) {
